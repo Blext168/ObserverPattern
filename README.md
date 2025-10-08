@@ -1,5 +1,14 @@
 # 👀 Observer Pattern
 
+## 🛠️ Funktionsweise
+
+Die Grundidee des Musters, das mehrere Objekte informiert werden, sobald sich der Zustand eines bestimmten `Subjekts` sich ändert.
+Das `Subjekt` ist Objekt, welches wir beobachten. Dabei gibt es ein `Subjekt`, welches eine Liste von Observern verwaltet. 
+Observer-Objekte können ein `Subjekts` abonnieren. Bei Änderung der Daten im `Subjekts` werden alle zugehörigen Observer 
+informiert und diese können dann ihre Daten aktualisieren.
+
+---
+
 ## 📝 Definition
 Das **Observer Pattern** ist ein **Verhaltensmuster** in der objektorientierten Programmierung.  
 Es beschreibt eine **1:n-Beziehung** zwischen Objekten:  
@@ -56,3 +65,4 @@ Wenn sich der Zustand eines **Subjects** (Beobachteten) ändert, werden automati
 Das Observer Pattern ist wie ein **Newsletter**:
 
 Sobald neue Informationen erscheinen, werden alle **Abonnenten (Observer)** automatisch benachrichtigt.
+
