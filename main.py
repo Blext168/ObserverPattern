@@ -17,6 +17,7 @@ class Observer(ABC):
 
 class NewsFeed:
     """Das Subjekt: Hält den Zustand (den neuesten Beitrag) und verwaltet Observer."""
+    
     def __init__(self):
         self._observers = []
         self._latest_post = None
@@ -59,6 +60,7 @@ class NewsFeed:
 
 class Subscriber(Observer):
     """Der konkrete Beobachter, der den NewsFeed abonniert."""
+    
     def __init__(self, name):
         self.name = name
         self.received_post = None
@@ -99,4 +101,5 @@ news_feed.detach(user_lisa)
 print("\n" + "="*50)
 
 # 6. Das Subject ändert seinen Zustand erneut
+
 news_feed.publish_post("Design Patterns sind wichtig.")
