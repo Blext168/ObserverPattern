@@ -1,11 +1,5 @@
 # 👀 Observer Pattern
 
-- `IObserver`-Interface und `IWeatherStation`-Subject.
-- `WeatherStation` (Concrete Subject) mit `Register`/`Unregister`/`Notify` und einer `Measure()`-Methode.
-- Zwei konkrete Observer: `ConsoleDisplayObserver` und `MemoryLoggerObserver`.
-- `WeatherController` als Consumer, der Messungen auslöst.
-- DI-Extension `AddObserverCollections()` für saubere Registrierung und eine kurze Anleitung zum Ausprobieren.
-
 ## 📝 Definition
 Das **Observer Pattern** ist ein **Verhaltensmuster** in der objektorientierten Programmierung.  
 Es beschreibt eine **1:n-Beziehung** zwischen Objekten:  
@@ -60,4 +54,5 @@ Wenn sich der Zustand eines **Subjects** (Beobachteten) ändert, werden automati
 
 ## 👉 Merksatz:
 Das Observer Pattern ist wie ein **Newsletter**:
+
 Sobald neue Informationen erscheinen, werden alle **Abonnenten (Observer)** automatisch benachrichtigt.
